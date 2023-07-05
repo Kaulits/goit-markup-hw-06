@@ -45,7 +45,7 @@
 <main>
 <section class="main-portfolio">
     <div class="container">
-    <h1 class="hide-title">Our products</h1> <!-- hide later in CSS -->
+    <h1 class="hide-title visually-hidden">Our products</h1> <!-- hide later in CSS -->
 <ul class="button-list list">
     <li class="button-list-item">
         <button class="button-item button" type="button">All</button>
@@ -225,12 +225,14 @@
         <p class="subscribe-title">Subscribe</p>
         <form class="subscribe-form">
             <label class="subscribe-email-input" for="subscribe_email">
-                <input type="email" class="subscribe_email" name="user_name" id="subscribe_email" placeholder="E-mail"></label>
-            <a href="telegram.com" class="subscribe-link link" target="_blank" rel="no referrer noopener">
+                <input type="email" class="subscribe-email" name="user-name" id="subscribe_email" placeholder="E-mail"></label>
+            <button class="subscribe-btn" type="submit">
                 Subscribe
-                <svg class="social-icons-footer" width="24" height="24">
+                <svg class="subscribe-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-telegram"></use>
                  </svg>
+            </button>
+          
             </a>
         </form>
     </div>
