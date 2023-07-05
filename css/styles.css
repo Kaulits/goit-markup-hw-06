@@ -173,6 +173,7 @@ fill: currentColor;
 .modal {
     width: 408px;
     min-height: 584px;
+    padding: 72px 24px 24px 24px;
 
     border-radius: 4px;
     background-color: #FCFCFC;
@@ -242,6 +243,7 @@ fill: currentColor;
 .contact-title {
     display: block;
     margin-bottom: 16px;
+    color: #2E2F42;
     
     text-align: center;
     font-size: 16px;
@@ -254,14 +256,27 @@ fill: currentColor;
 
 .modal-form {
 }
-.modal-label {
-    display: block;
-    margin-bottom: 4px;
-}
+
 .modal-form-field {
     position: relative;
     margin-bottom: 8px;
 }
+
+.modal-label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px; 
+    line-height: 1.17; 
+    letter-spacing: 0.04em; 
+    color: #8e8f99; 
+}
+
+.container-input-svg {
+    position: relative; 
+
+    
+}
+
 .contact-form-input {
     display: block;
     height: 40px;
@@ -270,19 +285,17 @@ fill: currentColor;
     background-color: transparent;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.40);
+    outline: transparent;
 
     padding-left: 38px;
 
-    transition: cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-form-input:focus {
-    border: 1px solid  #4D5AE5;
+    border-color: #4D5AE5; 
 } 
 
-.contact-form-input:hover {
-    border: 1px solid  #4D5AE5;
-} 
 
 .contact-form-input:focus + .modal-icon {
     fill:  #4D5AE5;
@@ -305,19 +318,44 @@ fill: currentColor;
 
 }
 
+.container-modal-comment {
+    margin-bottom: 16px;
+}
+
 .textarea-comment {
     display: block;
     height: 120px;
     width: 100%;
+    padding: 8px 16px; 
+
+    font-size: 12px; 
+    line-height: 1.17; 
+    letter-spacing: 0.04em; 
+    color: rgba(46, 47, 66, 0.4);
 
     background-color: transparent;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.40);
+    outline: transparent;
+    resize: none; 
 
-    padding-left: 38px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 
-    transition: cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.textarea-comment:focus {
+    border-color: #4D5AE5; 
+}
+
+
+.modal-label-comment:focus + .textarea-comment {
+    fill:  #4D5AE5;
+} 
+
+.container-modal-policy {
+    margin-bottom: 24px; 
+}
+
 
 /* CHECKBOX */
 
@@ -328,49 +366,68 @@ fill: currentColor;
     align-items: center;
     margin-top: 16px;
 }
-.modal-label-policy-text {
-color: #8E8F99;
-font-size: 12px;
-font-weight: 400;
-line-height: 14px;
-letter-spacing: 0.48px;
+
+
+.modal-label-policy {
+    font-size: 12px; 
+    line-height: 1.17; 
+    letter-spacing: 0.04em; 
+    color: var(--customers-icons); 
 }
+
+
 .modal-label-policy-link {
     color: var(--accent-color);
 }
 
-.modal-form-checkbox:checked + 
-.modal-form-icons > .modal-form-icon-unclick {
-    opacity: 0;
+.modal-label-span {
+    width: 16px; 
+    height: 16px; 
+    border: 1px solid rgba(46, 47, 66, 0.4); 
+    border-radius: 2px; 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; 
+    fill: transparent; 
 }
+
+
+.modal-form-checkbox {
+
+}
+
 
 .modal-form-checkbox:checked + 
-.modal-form-icons > .modal-form-icon-click {
-    opacity: 1;
+.modal-label-policy > .modal-label-span {
+    
+    background-color: #404bbf;
+    border: none; 
+    fill: #F4F4FD; 
+    
 }
 
-.modal-form-icon-unclick {
-    opacity: 1;
-}
 
-.modal-form-icon-click {
-    opacity: 0;
+.modal-form-link {
+    color: #4d5ae5; 
+
 }
 
 .btn-contact-form {
-display: flex;
+display: block;
 padding: 16px 32px;
 min-width: 169px;
-max-height: 56px;
+height: 56px;
 
 justify-content: center;
+font-family: "Roboto", sans-serif;
 
 margin-left: auto;
 margin-right: auto;
 margin-top: 24px;
 
 border-radius: 4px;
-border: 0px;
+border: none; 
 background: #4D5AE5;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
@@ -378,8 +435,12 @@ color: #FFF;
 text-align: center;
 font-size: 16px;
 font-weight: 500;
-line-height: 24px;
-letter-spacing: 0.64px
+line-height: 1.5;
+letter-spacing: 0.04em;
+
+cursor: pointer;
+
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
