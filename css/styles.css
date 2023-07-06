@@ -360,10 +360,10 @@ fill: currentColor;
 
 
 .modal-label-policy {
-    display: flex;
+    display: inline-flex;
     gap: 8px;
     align-items: center;
-    margin-top: 16px;
+   
 }
 
 
