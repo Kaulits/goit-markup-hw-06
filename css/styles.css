@@ -352,7 +352,8 @@ fill: currentColor;
 } 
 
 .container-modal-policy {
-    margin-bottom: 24px; 
+    display: inline-flex;
+    
 }
 
 
@@ -360,19 +361,17 @@ fill: currentColor;
 
 
 .modal-label-policy {
-    display: inline-flex;
+    display: flex;
     gap: 8px;
     align-items: center;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--customers-icons);
    
 }
 
 
-.modal-label-policy {
-    font-size: 12px; 
-    line-height: 1.17; 
-    letter-spacing: 0.04em; 
-    color: var(--customers-icons); 
-}
 
 
 .modal-label-policy-link {
