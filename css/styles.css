@@ -212,23 +212,25 @@ fill: currentColor;
 
 .modal-btn:hover {
     background-color: #404bbf; 
-    border: none; 
+    border: none;
+    outline: none;
 }
 
 .modal-btn:focus {
     background-color: #404bbf; 
     border: none; 
+    outline: none;
 }
 
 
-
-
-.modal-btn:hover .modal-icon {
+.modal-btn:hover .modal-icon-close {
     fill: #ffffff;
+   
 }
 
-.modal-btn:focus .modal-icon {
-    fill: #ffffff;
+.modal-btn:focus .modal-icon-close {
+    fill: #ffffff; 
+   
 }
 
 
@@ -358,7 +360,7 @@ fill: currentColor;
 
 
 .modal-label-policy {
-   
+    display: flex;
     gap: 8px;
     align-items: center;
     margin-top: 16px;
@@ -993,6 +995,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #F4F4FD;
+min-width: 264px;
 }
 
 .footer-logo {
@@ -1011,9 +1014,6 @@ color: #F4F4FD;
 }
 
 
-.footer-text {
-    max-width: 264px;
-}
 
 
 .footer-media-text {
